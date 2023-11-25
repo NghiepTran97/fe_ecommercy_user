@@ -1,9 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { RouterProvider } from 'react-router-dom';
-import router from './Router';
-import "./scss/index.scss";
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "./assets/index.scss";
+import {
+  RouterProvider,
+} from "react-router-dom";
+import router from './routes';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <RouterProvider router={router}/>
